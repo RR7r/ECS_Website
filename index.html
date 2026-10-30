@@ -1,0 +1,26 @@
+const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me: async()=>null }, entities:new Proxy({}, { get:()=>({ filter:async()=>[], get:async()=>null, create:async()=>({}), update:async()=>({}), delete:async()=>({}) }) }), integrations:{ Core:{ UploadFile:async()=>({ file_url:'' }) } } };
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080808" />
+    <link rel="preload" as="image" href="https://media.db.com/images/public/6aabededfb495e66b0aa0b93/597d3cbc3_ECSLogo.png" />
+    <title>Eternal Creative Studio — Film • Media • Design • Digital</title>
+    <meta name="description" content="Eternal Creative Studio is a creative studio working across Film, Media, Design and Digital — creating stories, visuals and ideas with intention. Based in Thiruvananthapuram." />
+    <meta name="keywords" content="Eternal Creative Studio, creative studio, film, media, design, digital, photography, videography, documentary, production, Thiruvananthapuram, Kerala" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Eternal Creative Studio — Film • Media • Design • Digital" />
+    <meta property="og:description" content="Stories. Visuals. Ideas. A creative studio working across Film, Media, Design and Digital." />
+    <meta property="og:site_name" content="Eternal Creative Studio" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Eternal Creative Studio" />
+    <meta name="twitter:description" content="Stories. Visuals. Ideas. Film • Media • Design • Digital." />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

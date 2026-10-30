@@ -1,0 +1,42 @@
+{
+  "name": "HomepageContent",
+  "type": "object",
+  "properties": {
+    "hero_eyebrow": {
+      "type": "string"
+    },
+    "hero_line1": {
+      "type": "string"
+    },
+    "hero_line2": {
+      "type": "string"
+    },
+    "hero_tagline": {
+      "type": "string"
+    },
+    "hero_image": {
+      "type": "string"
+    },
+    "intro_text": {
+      "type": "string"
+    }
+  },
+  "rls": {
+    "read": {},
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}
