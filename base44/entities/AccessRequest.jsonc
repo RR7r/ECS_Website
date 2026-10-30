@@ -1,62 +1,34 @@
 {
-  "name": "AccessRequest",
+  "name": "AuditLog",
   "type": "object",
   "properties": {
-    "full_name": {
+    "actor_email": {
       "type": "string"
     },
-    "email": {
+    "actor_name": {
       "type": "string"
     },
-    "avatar_url": {
+    "action": {
       "type": "string"
     },
-    "user_id": {
+    "entity_name": {
       "type": "string"
     },
-    "requested_role": {
-      "type": "string",
-      "enum": [
-        "admin",
-        "editor",
-        "photographer"
-      ],
-      "default": "editor"
-    },
-    "status": {
-      "type": "string",
-      "enum": [
-        "pending",
-        "approved",
-        "rejected"
-      ],
-      "default": "pending"
-    },
-    "reviewed_by": {
+    "record_title": {
       "type": "string"
     },
-    "reviewed_date": {
-      "type": "string"
-    },
-    "note": {
+    "details": {
       "type": "string"
     }
   },
   "required": [
-    "email"
+    "action"
   ],
   "rls": {
     "read": {
-      "$or": [
-        {
-          "created_by_id": "{{user.id}}"
-        },
-        {
-          "user_condition": {
-            "role": "admin"
-          }
-        }
-      ]
+      "user_condition": {
+        "role": "admin"
+      }
     },
     "create": {
       "$or": [
