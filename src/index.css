@@ -42,9 +42,9 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
+* {
+  border-color: hsl(var(--border));
+}
 
   html {
     scroll-behavior: smooth;
