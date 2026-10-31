@@ -16,6 +16,7 @@ import WorkDetail from '@/pages/WorkDetail';
 import About from '@/pages/About';
 import Photography from '@/pages/Photography';
 import PhotographyDetail from '@/pages/PhotographyDetail';
+import Services from '@/pages/Services';
 import Production from '@/pages/Production';
 import Contact from '@/pages/Contact';
 import Login from '@/pages/Login';
